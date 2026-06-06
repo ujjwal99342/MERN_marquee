@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Medical Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        fieldset{
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        textarea{
+            width: 400px;
+            height: 100px;
+        }
+
+        .section{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        input, select{
+            margin-top: 5px;
+        }
+
+        button{
+            padding: 5px 12px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+
+    <!-- Radio Button -->
+    <fieldset>
+        <legend>Health Information</legend>
+
+        <ul>
+            <li>
+                Asthma or breathing problems:
+                <input type="radio" name="asthma"> Yes
+                <input type="radio" name="asthma"> No
+            </li>
+        </ul>
+    </fieldset>
+
+
+    <!-- Date and Time -->
+    <fieldset>
+        <legend>Date/Time</legend>
+
+        <ul>
+            <li>
+                DOB
+                <input type="date">
+            </li>
+
+            <li>
+                Time
+                <input type="time">
+            </li>
+
+            <li>
+                Time
+                <input type="datetime-local">
+            </li>
+        </ul>
+    </fieldset>
+
+
+    <!-- Textarea -->
+    <fieldset>
+        <legend>Textarea</legend>
+
+        <ul>
+            <li>Summary Of your last Operations:</li>
+        </ul>
+
+        <textarea placeholder="enter your summary"></textarea>
+    </fieldset>
+
+
+    <!-- File Input -->
+    <fieldset>
+        <legend>File Input</legend>
+
+        <label>
+            Drop your last Medical Report:
+        </label>
+
+        <input type="file">
+    </fieldset>
+
+
+    <!-- Checkbox -->
+    <fieldset>
+        <legend>Checkbox/Select/Number</legend>
+
+        <ul>
+            <li>
+                <input type="checkbox">
+                You've read those Terms and Conditions
+            </li>
+
+            <li>
+                <input type="checkbox">
+                Is your reports from Pathlabs
+            </li>
+        </ul>
+    </fieldset>
+
+
+    <!-- Number Input -->
+    <fieldset>
+        <legend>Number Input</legend>
+
+        <label>
+            Percentage of HB in body?
+        </label>
+
+        <input type="number" min="0" max="100">
+    </fieldset>
+
+
+    <!-- Select -->
+    <fieldset>
+        <legend>Select</legend>
+
+        <label>Select your state:</label>
+
+        <select>
+            <option>Choose State</option>
+            <option>Gujarat</option>
+            <option>Maharashtra</option>
+            <option>Rajasthan</option>
+            <option>Delhi</option>
+            <option>Karnataka</option>
+        </select>
+    </fieldset>
+
+
+    <!-- Buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>

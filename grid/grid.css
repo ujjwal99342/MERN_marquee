@@ -1,11 +1,7 @@
-/* Container styling */
 .grid-container {
   display: grid;
-  /* 4 columns: standardizing layout widths */
   grid-template-columns: 1.2fr 1.5fr 1.5fr 1.2fr;
-  /* 3 rows of equal height */
   grid-template-rows: repeat(3, 150px);
-  /* 10px spacing as shown in the image */
   gap: 10px;
   background-color: #242943;
   padding: 20px;
@@ -14,17 +10,14 @@
   box-sizing: border-box;
 }
 
-/* Base item styling */
 .item {
   border-radius: 4px;
 }
 
-/* Color definitions */
 .green-tall-left, .green-wide-top, .green-tall-right { background-color: #64C253; }
 .red-top-right, .red-middle-right, .red-bottom-left { background-color: #E6343B; }
 .orange-middle-left, .orange-bottom-right { background-color: #FFAE25; }
 
-/* Grid Placement Rules */
 .green-tall-left {
   grid-row: 1 / 4;
   grid-column: 1 / 2;
